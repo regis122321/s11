@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Bootstrap Components</title>
+		 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+	</head>
+	<body>
+	<!-- Navbar start -->
+		<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Thank you for contacting us!</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body text-center">
+		        Message Send Successfully!
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+		  <a class="navbar-brand" href="#">Navbar</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarNav">
+		    <ul class="navbar-nav ml-auto">
+		      <li class="nav-item px-3">
+		        <a class="nav-link active" href="#">About Me<span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item px-3">
+		        <a class="nav-link" href="#">Projects</a>
+		      </li>
+		      <li class="nav-item px-3">
+		        <a class="nav-link" href="#">Tools</a>
+		      </li>
+		    </ul>
+		      <form class="form-inline">
+			    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+			    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+			  </form>
+		  </div>
+		</nav>
+
+		<!-- end of navbar -->
+
+		<!-- Main content section part -->
+
+		<div class="container-fluid text-center">
+			<div class="row">
+				<!-- accordion side nav -->
+				<div class="accordion col-xl-2 p-0 d-none d-xl-block" id="accordionExample">
+					<!-- services section -->
+					<div class="card">
+						<div class="card-header" id="headingOne">
+							<h2 class="mb-0">
+								<button class="btn btn-link btn-block text-left collapsed text-decoration-none" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+									Services
+								</button>
+							</h2>
+						</div>
+
+						<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+							<div class="card-body">
+								<ul class="text-justify" style="list-style: none;">
+									<li><a href="#">Front End Design</a></li>
+									<li><a href="#">Back End Server</a></li>
+									<li><a href="#">Bootstrap Development</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- end of services -->
+
+					<!-- Project Section -->
+					<div class="card">
+						<div class="card-header" id="headingTwo">
+							<h2 class="mb-0">
+								<button class="btn btn-link btn-block text-left collapsed text-decoration-none" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+									Projects
+								</button>
+							</h2>
+						</div>
+						<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+							<div class="card-body">
+								<ul class="text-justify" style="list-style: none;">
+									<li><a href="#">HTML</a></li>
+									<li><a href="#">Bootstrap</a></li>
+									<li><a href="#">Java Springboot server</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- end of project -->
+
+					<!-- tool section -->
+					<div class="card">
+						<div class="card-header" id="headingThree">
+							<h2 class="mb-0">
+								<button class="btn btn-link btn-block text-left collapsed text-decoration-none" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+									Tools
+								</button>
+							</h2>
+						</div>
+						<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+							<div class="card-body">
+								<ul class="text-justify" style="list-style: none;">
+									<li><a href="#">Core tools</a></li>
+									<li><a href="#">Other tools</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- end of tool section -->
+				</div>
+				<!-- end of sidebar accorduon -->
+
+			    <!-- Side Content -->
+			    <div class="col-xl-10 p-0">
+			    
+			    	<main class="container-fluid bg-dark text-light min-vh-100 p-3 p-md-5">
+			    		
+				    	<!-- Profile section -->
+				    	<section>
+				    		<img src="https://i.guim.co.uk/img/media/3656ae6ea2209d4561caf04fa9f172a519908ca3/0_28_2318_1391/master/2318.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=afcc355f47876bc495cdc3c902639bae" width="250" class="mt-5 mt-md-0 rounded-circle">
+
+				    		<h1>Ada Lovelace</h1>
+				    		<h3>Fullstack Developer</h3>
+
+				    		<figcaption class="row mt-5">
+				    			<div class="offset-md-2 col-md-8">
+				    				<p>
+				    					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				    					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				    					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				    					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				    					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				    					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				    				</p>
+				    			</div>
+				    		</figcaption>
+				    	</section>
+				    	<!-- End of Profile -->
+
+				    	<!-- Carousel -->
+				    	<section class="row d-none d-md-block mt-md-5 " >
+				    		<div class="offset-xl-3 col-xl-6">
+				    			<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+				    				<ol class="carousel-indicators">
+				    					<li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+				    					<li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+				    					<li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+				    				</ol>
+				    				<div class="carousel-inner">
+				    					<div class="carousel-item active">
+				    						<img src="https://place-puppy.com/500x300" class="d-block w-100" alt="...">
+				    						<div class="carousel-caption d-none d-md-block">
+				    							<h5>First slide label</h5>
+				    							<p>Some representative placeholder content for the first slide.</p>
+				    						</div>
+				    					</div>
+				    					<div class="carousel-item">
+				    						<img src="http://placekitten.com/500/300" class="d-block w-100" alt="...">
+				    						<div class="carousel-caption d-none d-md-block">
+				    							<h5>Second slide label</h5>
+				    							<p>Some representative placeholder content for the second slide.</p>
+				    						</div>
+				    					</div>
+				    					<div class="carousel-item">
+				    						<img src="https://placebear.com/500/300" class="d-block w-100" alt="...">
+				    						<div class="carousel-caption d-none d-md-block">
+				    							<h5>Third slide label</h5>
+				    							<p>Some representative placeholder content for the third slide.</p>
+				    						</div>
+				    					</div>
+				    				</div>
+				    				<button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
+				    					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				    					<span class="sr-only">Previous</span>
+				    				</button>
+				    				<button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
+				    					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				    					<span class="sr-only">Next</span>
+				    				</button>
+				    			</div>
+				    		</div>
+				    	</section>
+				    	<!-- End of carousel -->
+
+				    	<!-- other projects -->
+				    	<section class="bg-secondary text-light min-vh-100 p-5 mt-5">
+				    		<h2 class="mb-3">Other Projects</h2>
+
+				    		<!-- oTHER PORJECT CONTERNETR -->
+				    		<article class="p-md-5 d-lg-flex justify-content-center">
+				    			<!-- html card -->
+				    			<div class="card col-xl-4 bg-dark mb-5 mb-xl-0 mx-auto" style="width: 18rem;">
+				    				<div class="card-body">
+				    					<img class="card-img-top" src="https://3.bp.blogspot.com/-7x5c_f1yzsQ/XHv9FZKHrEI/AAAAAAAADrE/4iGl9Lm6K2odX4SdWbU_RN6gZesx4IaGACEwYBhgL/s1600/html.jpg">
+				    					<h5 class="card-title">HTML</h5>
+				    					<h6 class="card-subtitle mb-2 text-muted">Programming Basics</h6>
+				    					<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				    					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				    					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				    					consequat.</p>
+				    					<a href="#" class="card-link">Link to Project</a>
+				    				</div>
+				    			</div>
+				    			<!-- end of html card -->
+				    			<!-- bootstrap card2 -->
+				    			<div class="card col-xl-4 bg-dark mb-5 mb-xl-0 mx-auto mr-xl-5 ml-xl-5" style="width: 18rem;">
+				    				<div class="card-body">
+				    					<img class="card-img-top" src="https://www.cloudways.com/blog/wp-content/uploads/Rest-API-introduction.jpg">
+				    					<h5 class="card-title">Bootstrap</h5>
+				    					<h6 class="card-subtitle mb-2 text-muted">Rapid Prototyping</h6>
+				    					<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				    					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				    					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				    					consequat. </p>
+				    					<a href="#" class="card-link">Link to Project</a>
+				    				</div>
+				    			</div>
+				    			<!-- end of bootstrap card -->
+				    			<!-- noda js card -->
+				    			<div class="card col-xl-4 bg-dark mb-5 mb-xl-0 mx-auto" style="width: 18rem;">
+				    				<div class="card-body">
+				    					<img class="card-img-top" src="https://clever-solution.com/wp-content/uploads/2020/04/5625%D0%9C%D0%BE%D0%BD%D1%82%D0%B0%D0%B6%D0%BD%D0%B0%D1%8F-%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C-1-1280x720.png">
+				    					<h5 class="card-title">Java Springboot Server</h5>
+				    					<h6 class="card-subtitle mb-2 text-muted">Backend Basics</h6>
+				    					<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				    					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				    					quis nostrud exercitation ullamco laboris nisi ut.</p>
+				    					<a href="#" class="card-link">Link to Project</a>
+				    				</div>
+				    			</div>
+				    			<!-- end of node js card -->
+				    		</article>
+				    		<!-- end of project contAINER -->
+				    	</section>
+				    	<!-- End of projects -->
+
+				    	<!-- Contact section -->
+				    	<section class="mt-5">
+				    		<h2>Contact Me</h2>
+				    		<div class="row justify-content-center">
+				    			<form class="col-12 col-md-8 col-xl-4 flex-xl-column text-light bg-primary">
+					    			<div class="form-group mt-3">
+					    				<label for="name">Name</label>
+					    				<input type="text" class="form-control w-100 p-2" name="name" id="name" placeholder="Your Name">
+					    			</div>
+					    			<div class="form-group mt-3">
+					    				<label for="email">Email</label><br>
+					    				<input class="form-control w-100 p-2" type="email" name="email" id="email" placeholder="name@example.com">
+					    			</div>
+					    			<div class="form-group mt-3">
+					    				<label for="cnum">Contact Number</label><br>
+					    				<input class="form-control w-100 p-2" type="number" name="cnum" id="cnum" placeholder="+63 920 696 6969">
+					    			</div>
+					    			<div class="form-group mt-3">
+					    				<label for="concern">Concern</label><br>
+					    				<select class="form-control w-100 p-2" id="concern" name="concern">
+											<option value="Question 1">Question</option>
+											<option value="Question 2">Question 2</option>
+										</select>
+					    			</div>
+					    			<div class="form-group mt-3">
+					    				<label for="message">Message</label><br>
+					    				<textarea class="form-control w-100 p-2" cols="25" rows="10" style="resize:none"></textarea>
+					    			</div>
+					    			<button type="button" class="btn btn-dark mt-2 mb-3" data-toggle="modal" data-target="#exampleModal">Send Email</button>
+					    		</form>
+				    		</div>
+				    	</section>
+				    	<!-- End of Contact -->
+
+					</main>
+			    </div>
+
+			    <!-- End of Side Content -->
+
+			</div>
+		</div>
+
+		<!-- end of main content -->
+
+
+
+
+
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+      
+	</body>
+</html>
